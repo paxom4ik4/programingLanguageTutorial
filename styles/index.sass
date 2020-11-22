@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+$dark-gray: #333232
+$white: #ffffff
+
+*
+    font-family: 'Roboto', sans-serif
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+a
+    text-decoration: none
+    color: $white
+
+img
+    margin: 15px auto
+    border-radius: 10px
+    width: 1600px
+    height: 900px
+.header
+    position: fixed
+    z-index: 5
+    top: 0
+    left: 0
+    width: 100%
+    height: 60px
+    transition: .35s
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: $dark-gray
+    color: $white
+.header-small
+    height: 40px
+    transition: .35s
+    opacity: 0.8
+.header-logo
+    width: 30%
+    height: 100%
+    display: flex
+    text-align: center
+    justify-content: center
+    align-items: center
+
+.header-navigation
+    width: 70%
+    height: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    .nav-item
+        cursor: pointer
+        transition: .35s
+    .nav-item:hover
+        font-size: 1.1em
+        transition: .35s
+
+.introduction
+    margin-top: 60px
+    width: 100%
+    height: 280px
+    transition: 0.35s
+    opacity: 0.7
+    .owl-carousel
+        height: 280px
+        width: 100%
+        transition: 0.35s
+        .slide-1
+            background-image: url(../assets/slider/slide1.png)
+        .slide-2
+            background-image: url(../assets/slider/slide2.png)
+        .slide-3
+            background-image: url(../assets/slider/slide3.png)
+        .slide-4
+            background-image: url(../assets/slider/slide4.png)
+        .slide
+            background-color: $dark-gray
+            background-size: cover
+            background-position: center
+            background-repeat: no-repeat
+            height: 280px
+            overflow-y: hidden
+            width: 100%
+            transition: 0.35s
+.introduction:hover
+    opacity: 1
+    cursor: pointer
+    height: 980px
+    transition: 0.35s
+    .owl-carousel
+        height: 980px
+        transition: 0.35s
+        .slide
+            height: 980px
+            transition: 0.35s
+
+.topic
+    width: 100%
+    display: flex
+    flex-direction: column
+    .topic-heading
+        display: flex
+        align-items: center
+        padding-left: 50px
+        height: 80px
+        background-color: $dark-gray
+        font-size: 1.5em
+        color: $white
+    .topic-info
+        padding: 0 70px 0 70px
+        font-size: 1.2em
+        h4
+            margin: 5px 0
+        p
+            margin: 10px 0
+        div
+            margin-bottom: 40px
+        ul
+            margin-left: 100px
+            li
+                margin-top: 15px
+        .code-example
+            margin-top: 5px
+            margin-left: 50px
+            padding: 10px 0 0 5px
+            border-left: 5px solid $dark-gray
+
+.instruction-link
+    cursor: pointer
+    position: fixed
+    bottom: 5px
+    right: 5px
+    width: 240px
+    height: 60px
+    background-color: $dark-gray
+    color: $white
+    border-radius: 5px
+    font-size: .9em
+    text-align: center
+    line-height: 60px
+    transition: .3s
+
+.instruction-link:hover
+    opacity: 0.8
+    transition: .3s
+
+.visual-navigation
+    width: 320px
+    justify-content: center
+
+.program-creating
+    margin-top: 80px
+
+.footer
+    color: $white
+    font-size: 1.2em
+    display: flex
+    flex-direction: column
+    height: 320px
+    justify-content: center
+    align-items: center
+    background-color: $dark-gray
+    .footer-info
+        height: 160px
+        width: 90%
